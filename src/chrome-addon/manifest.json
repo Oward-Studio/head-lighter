@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Highlight Headers",
+  "name": "Head-Lighter",
   "version": "1.0",
-  "description": "Highlights all header tags (h1-h6) with a box-shadow and adds a tag name label. Click the extension icon to toggle highlighting.",
+  "description": "Chrome extension that highlights all header tags (h1-h6) with a box-shadow and adds a tag name label. Click the extension icon to toggle highlighting.",
   "permissions": ["activeTab", "scripting", "storage", "sessions"],
   "background": {
     "service_worker": "background.js"
