@@ -9,6 +9,8 @@
 
 Head-Lighter is a simple and handy Chrome extension that highlights heading tags (h1 to h6) on any web page. It adds a colored border around headings and displays the tag name above each heading, making it easier to identify the structure of a page. It also targets elements with the `text-heading` class.
 
+![Headlighter in action](assets/screenshot.png)
+
 ## Installation
 
 1. Download the source code from this GitHub repository.
