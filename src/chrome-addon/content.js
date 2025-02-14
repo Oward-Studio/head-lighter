@@ -38,7 +38,9 @@ function removeHighlight() {
 
 chrome.storage.session.get(["highlightEnabled"], (result) => {
   const isEnabled =
-    result.highlightEnabled === undefined ? false : result.highlightEnabled; // Initialize to false
+    result && result.highlightEnabled === undefined
+      ? false
+      : result.highlightEnabled; // Check if result is defined
   if (isEnabled) {
     applyHighlight();
   }
