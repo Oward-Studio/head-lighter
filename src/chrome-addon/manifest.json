@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Highlight Headers",
+  "version": "1.0",
+  "description": "Highlights all header tags (h1-h6) with a box-shadow and adds a tag name label. Click the extension icon to toggle highlighting.",
+  "permissions": ["activeTab", "scripting", "storage", "sessions"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icon-off-16.png",
+    "32": "icon-off-32.png",
+    "48": "icon-off-48.png",
+    "128": "icon-off-128.png"
+  },
+  "action": {
+    "default_title": "Toggle Header Highlighting"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
